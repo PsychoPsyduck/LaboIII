@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/script.js"></script>
+    <title>Controles</title>
+
+</head>
+<body>
+    <form action="./pagina2.html" method="GET">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <input type="hidden" name="FechaDeEnvio">
+
+            <div>
+                <label for="txtNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="Nombre" required placeholder="Solo el nombre">
+            </div>
+
+            <div>
+                <label for="txtEdad">Edad:</label>
+                <input type="number" min="18" max="99" value="18" id="txtEdad" name="Edad" required>
+            </div>
+
+            <fieldset>
+                <legend>Genero</legend>
+                <input type="radio" name="sexo" id="rdoMasculino"><label for="rdoMasculino">Masculino</label>
+                <input type="radio" name="sexo" id="rdoFemenino" checked><label for="rdoFemenino">Femenino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobbies</legend>
+                <input type="checkbox" name="pasatiempo" id="chkLol"><label for="chkLol">League</label>
+                <input type="checkbox" name="pasatiempo" id="chkWow"><label for="chkWow">Warcraft</label>
+                <input type="checkbox" name="pasatiempo" id="chkOw"><label for="chkOw">Overwatch</label>
+            </fieldset>
+
+            <div>
+                <label for="cboPais">Pais:</label>
+                <select name="Pais" id="cboPais">
+                    <optgroup label="America">
+                            <option value="1">Argentina</option>
+                            <option value="2">Brasil</option>
+                            <option value="3" selected>Uruguay</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option value="4">España</option>
+                        <option value="5">Italia</option>
+                    </optgroup>
+                </select>     
+            </div>      
+
+            <div>
+                <label for="txtEmail">Email:</label>
+                <input type="email" id="txtEmail" name="Email" required>
+            </div>
+
+            <div>
+                <label for="txtContraseña">Contraseña:</label>
+                <input type="password" id="txtContraseña" name="Contraseña" title="Es obligatorio" required>
+            </div>
+
+            <div>
+                <label for="taMensaje">Deje su mensaje:</label>
+                <div>
+                    <textarea name="Mensaje" id="taMensaje" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="reset" value="Limpiar">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <button id="Saludar">Saludo</button>
+</body>
+</html>
