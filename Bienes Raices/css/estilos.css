@@ -1,0 +1,72 @@
+body{
+    line-height: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.site-header{
+    background: url("../img/header.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.site-header h1{
+    color: white;
+    max-width: 600px;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* p,#titulo{
+    color:white;
+    background-color: grey;
+    text-align: center;
+} */
+
+/* id */
+/* #PDerechos{
+    color:blue;
+    background-color: grey;
+    text-align: center;
+} */
+
+/* clase */
+/* .HCabecera{
+    background-color: lightgray;
+} */
+
+/* aplica para todos los elementos del dom */
+/* *{
+    padding: 0;
+    margin: 1%;
+} */
+
+/* body{
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} */

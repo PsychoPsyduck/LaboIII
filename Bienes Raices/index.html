@@ -4,74 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./js/index.js">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <title>Bienes Raices</title>
 </head>
+
 <body>
-    <img src="./img/logo.svg" alt="logo.svg">
-    <h1>Venta de Casas y Departamentos <br> Exclusivos de Lujo</h1>
-    <h2>Más Sobre Nosotros</h2>
-    <div>
+    <header class="site-header">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="logo.svg">
+                </a>
+                <nav class="navegacion">
+                    <a href="./nosotros.html">Nosotros</a>
+                    <a href="./anuncios.html">Anuncios</a>
+                    <a href="./blog.html">Blog</a>
+                    <a href="./contacto.html">Contacto</a>
+                </nav>
+            </div>
+            <h1>Venta de Casas y Departamentos <br> Exclusivos de Lujo</h1>
+        </div>
+    </header>
+
+    <section>
+        <h2>Más Sobre Nosotros</h2>
         <div>
+            <img src="./img/icono1.svg" alt="icono1.svg">
             <h3>Seguridad</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni dolores tempore odit vel excepturi dicta, molestiae recusandae, neque, ducimus perspiciatis doloribus qui officia? Ea vitae minus quidem dicta obcaecati!</p>
         </div>
         <div>
+            <img src="./img/icono2.svg" alt="icono2.svg">
             <h3>El Mejor Precio</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam rem inventore, vel saepe quasi pariatur tempore id cum tempora odio, voluptate eveniet, adipisci cumque nesciunt at nostrum illo. Ea, deleniti.</p>
         </div>
         <div>
+            <img src="./img/icono3.svg" alt="icono3.svg">
             <h3>A Tiempo</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim assumenda aperiam commodi vel et aliquam ipsum corporis ex quam fuga sunt illo id consectetur at rerum, sequi nostrum perspiciatis laborum.</p>
         </div>
-    </div>
-    <h2>Casas y Departamentos en Venta</h2>
-    <div>
+    </section>
+
+    <main>
+        <h2>Casas y Departamentos en Venta</h2>
         <div>
+            <img src="./img/anuncio1.jpg" alt="anuncio1.jpg">
             <h3>Casa de Lujo en el Lago</h3>
             <p>Casa en el lago con terminaciones de lujo</p>
             <p>1000000</p>
             <button>Ver propiedad</button>
         </div>
         <div>
+            <img src="./img/anuncio2.jpg" alt="anuncio2.jpg">
             <h3>Casa con Terminaciones de Lujo</h3>
             <p>Casa con diseño moderno, asi como tecnoligia inteligente y amueblada</p>
             <p>2000000</p>
             <button>Ver propiedad</button>
         </div>
         <div>
+            <img src="./img/anuncio3.jpg" alt="anuncio3.jpg">
             <h3>Casa con Pileta</h3>
             <p>Casa con pileta y acabados de lujo en la ciudad. Excelente oportunidad</p>
             <p>3000000</p>
             <button>Ver propiedad</button>
         </div>
-    </div>
-    <button>Ver Todas</button>
-    <h2>Encuentra la casa de tus sueños</h2>
-    <p>Llena el formulario de contacto y un asesor se pontrá en contacto en la brevedad</p>
-    <button>Contactenos</button>
-    <div>
-        <div>
-            <h2>Nuestro Blog</h2>
-            <div>
-                <h3>Terraza en el techo de tu casa</h3>
-                <p>Escrito el: <em>20/10/2019</em> por: <em>Admin</em></p>
-                <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
-            </div>
-            <div>
-                <h3>Guia para la decoracion de tu hogar</h3>
-                <p>Escrito el: <em>20/10/2019</em> por: <em>Admin</em></p>
-                <p>Maximiza el espacio en tu hogar con esta guia, aprende a convinar muebles y colores para darle vida a tu espacio</p>
-            </div>
-        </div>
-        <div>
-            <h2>Comentarios</h2>
-            <div>
-                <blockquote>El personal se comporto de excelente forma, muy buena atencion y la casa que me ofrecieron cumple con todas mis expectativas.</blockquote>
-                <cite>-Nicolas Sande</cite>
-            </div>
-        </div>
-    </div>
+        <button>Ver Todas</button>
+    </main>
 
-    <p>Todos los derechos reservados - LABIII UTNFRA 2019 &copy;</p>
+    <section>
+        <h2>Encuentra la casa de tus sueños</h2>
+        <p>Llena el formulario de contacto y un asesor se pontrá en contacto en la brevedad</p>
+        <button>Contactanos</button>
+    </section>
+
+    <section>
+        <h2>Nuestro Blog</h2>
+        <article>
+            <img src="./img/blog1.jpg" alt="blog1.jpg">
+            <h3>Terraza en el techo de tu casa</h3>
+            <p>Escrito el: <em>20/10/2019</em> por: <em>Admin</em></p>
+            <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
+        </article>
+        <article>
+            <img src="./img/blog2.jpg" alt="blog2.jpg">
+            <h3>Guia para la decoracion de tu hogar</h3>
+            <p>Escrito el: <em>20/10/2019</em> por: <em>Admin</em></p>
+            <p>Maximiza el espacio en tu hogar con esta guia, aprende a convinar muebles y colores para darle vida a tu espacio</p>
+        </article>
+        <section>
+            <h2>Comentarios</h2>
+            <blockquote>El personal se comporto de excelente forma, muy buena atencion y la casa que me ofrecieron cumple con todas mis expectativas.</blockquote>
+            <cite>-Nicolas Sande</cite>
+        </section>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="./anuncios.html">Anuncios</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+        </nav>
+
+        <p>Todos los derechos reservados - LABIII UTNFRA 2019 &copy;</p>
+    </footer>
 </body>
 </html>

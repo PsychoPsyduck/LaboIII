@@ -1,0 +1,1 @@
+nativo = document.getElementsByTagName("p");
