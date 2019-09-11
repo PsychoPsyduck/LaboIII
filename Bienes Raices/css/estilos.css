@@ -39,6 +39,115 @@ body{
     margin: 0 auto;
 }
 
+h1:hover{
+    color: darkgreen;
+}
+
+.contenedor-iconos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icono{
+    flex-basis: calc(33.3% - 10px);
+    text-align: center;
+}
+
+.icono h3{
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.icono h3, .icono p{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.icono p{
+    margin-bottom: 30px;
+}
+
+.titulo-nosotros{
+    text-align: center;
+}
+
+.titulo-nosotros h2{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor-anuncios img{
+    width : 100%;
+}
+
+.anuncio{
+    flex-basis: calc(33.3% - 10px);
+    border: 1px solid gray;
+    background-color: #F5F5F5;
+    margin-bottom: 30px;
+}
+
+.anuncio a{
+    margin: 0 auto;
+}
+
+.contenido-anuncio{
+    padding : 35px 20px;
+}
+
+.contenido-anuncio h3{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.precio{
+    color: #71B100;
+}
+
+.boton{
+    text-decoration: none;
+    color: white;
+    padding: 20px 35px;
+    font-size: 16px;
+    width: 250px;
+    display: block;
+    text-align: center;
+}
+
+.boton-naranja{
+    background-color: #E08709;
+}
+
+.comodidades{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex: 1; 
+}
+
+.comodidades li{
+    display: flex;
+}
+
+.comodidades li img{
+    margin-right: 20px;
+}
+
+.boton-verde{
+    background-color: #71B100;
+}
+
+.contenedor-ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /* p,#titulo{
     color:white;
