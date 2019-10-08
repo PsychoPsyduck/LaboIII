@@ -1,8 +1,9 @@
-let inmuebles = [];
+// let Anuncios = [];
 
-crearTabla(inmuebles);
+// crearTabla(Anuncios);
 
-function Inmueble(titulo, transaccion, descripcion, precio, num_wc, num_estacionamiento, num_dormitorio, active){
+function Anuncio(id, titulo, transaccion, descripcion, precio, num_wc, num_estacionamiento, num_dormitorio, active){
+    this.id = id
     this.titulo = titulo;
     this.transaccion = transaccion;
     this.descripcion = descripcion;
@@ -12,7 +13,7 @@ function Inmueble(titulo, transaccion, descripcion, precio, num_wc, num_estacion
     this.num_dormitorio = num_dormitorio;
     this.active = active;
 
-    // Inmueble.prototype.toString = function(){
+    // Anuncio.prototype.toString = function(){
     //     return `Hola soy ${this.titulo} y tengo ${this.num_dormitorio} dormitorios.`;
     // }
 }

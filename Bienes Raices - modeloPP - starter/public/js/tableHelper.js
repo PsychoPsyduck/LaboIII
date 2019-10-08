@@ -10,7 +10,9 @@ function crearTabla(array) {
     for(atributo in array[0]) {
         let th = document.createElement("th");
         th.textContent = atributo;
-        cabecera.appendChild(th);
+        if(atributo != "active"){
+            cabecera.appendChild(th);
+        }
     }
 
     tabla.appendChild(cabecera);
@@ -20,6 +22,8 @@ function crearTabla(array) {
         var unObjeto = array[i];
 
         for(j in unObjeto) {
+            if(unObjeto[j]==unObjeto["active"])
+                continue;
             let td = document.createElement("td");
             td.setAttribute('style', 'text-align:center');
             var dato = document.createTextNode(unObjeto[j]);

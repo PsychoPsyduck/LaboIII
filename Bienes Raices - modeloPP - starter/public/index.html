@@ -13,16 +13,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienes Raices</title>
-    <script src="./js/tableHelper.js"></script>
-    <script src="./js/inmueble.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/index.js"></script>
+    <script src="./js/xhr.js"></script>
+    <script src="./js/anuncio.js"></script>
+    <script src="./js/tableHelper.js"></script>
+    <title>Bienes Raices</title>
 </head>
 
 <body>
     <form action="#" style="width: 300px" id="frmAlta" class="frm">
         <fieldset>
-            <legend>Alta de Inmueble</legend>
+            <legend>Alta de Anuncio</legend>
             <table>
                 <tr>
                     <td><label for="txtTitulo">Título:</label></td>
@@ -59,13 +62,14 @@
                 </tr>
                 
             </table>
+            <tr>
+                <td><input type="button" class="boton boton-verde" id="btnAlta" name="alta" value="Alta"></td>
+                <td><input type="button" class="boton boton-azul oculto" id="btnModificacion" name="modificacion" value="Modificacion"></td>
+                <td><input type="button" class="boton boton-naranja oculto" id="btnBaja" name="baja" value="Baja"></td>
+                <td><input type="button" class="boton boton-rojo oculto" id="btnCancelar" name="cancelar" value="Cancelar"></td>
+            </tr>
         </fieldset>
-        <!-- <tr> -->
-            <input type="submit" value="Alta">
-            <!-- <td><input type="button" class="boton boton-naranja" id="btnBaja" name="baja" value="Baja"></td>
-            <td><input type="button" class="boton boton rojo" id="btnCancelar" name="cancelar" value="Cancelar"></td>
-        </tr> -->
-        <div id="divTabla"></div>
     </form>
+    <div id="divTabla"></div>
 </body>
 </html>
