@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    
+        let array = ["Juan", "ana", true, 22, [1, 2, 3], { nombre: "Jorge", edad: 30}];
+        let numeros = [2, 4, 5, 3, 8];
+
+        //Forma1
+        // array.forEach(mostrar);
+
+        // function mostrar(algo) {
+        //     console.log(algo);
+        // }
+
+        //Forma2
+        // array.forEach(function (algo) {
+        //     console.log(algo);
+        // });
+
+        //Forma3
+        array.forEach(element => console.log(elemento));
+
+        let cuadrados = [];
+        let retorno = numeros.forEach(numero => cuadrados.push(numero * numero));
+
+        console.log(retorno);
+        console.log(numeros);
+        console.log(cuadrados);
+
+    </script>
+
+</body>
+</html>
