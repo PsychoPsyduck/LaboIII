@@ -1,8 +1,8 @@
 "use strict";
-//npm install -g typescript
-//tsc --init
-//tsc hello.ts (compila el js)
-//tsc -w
+// npm install -g typescript
+// tsc --init
+// tsc hello.ts (compila el js)
+// tsc -w
 let mensaje = true;
 mensaje = "Hola!";
 console.log(mensaje);
@@ -133,11 +133,14 @@ var Funciones;
 })(Funciones || (Funciones = {}));
 Funciones.f1();
 Funciones.f2();
-$(function () {
-    console.log("ready");
-});
+// $(function(){
+//     console.log("ready");
+// })
+// npm init
+// npm i @types/jquery
+// npm i jquery
 /// <reference path="hello.ts" />
 let mens = "bye!";
 console.log(mens);
-//ctrl+c cancela watch 
+//ctrl+c cancela watch
 //# sourceMappingURL=output.js.map

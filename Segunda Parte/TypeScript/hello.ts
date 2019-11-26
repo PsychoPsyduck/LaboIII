@@ -1,7 +1,7 @@
-//npm install -g typescript
-//tsc --init
-//tsc hello.ts (compila el js)
-//tsc -w
+// npm install -g typescript
+// tsc --init
+// tsc hello.ts (compila el js)
+// tsc -w
 
 let mensaje:string | number | boolean = true;
 mensaje = "Hola!";
@@ -176,9 +176,10 @@ namespace Funciones{
 Funciones.f1();
 Funciones.f2();
 
-$(function(){
-    console.log("ready");
-})
-//npm init
-//npm i @types/jquery
-//npm i jquery
+// $(function(){
+//     console.log("ready");
+// })
+
+// npm init
+// npm i @types/jquery
+// npm i jquery
