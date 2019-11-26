@@ -1,0 +1,293 @@
+ 
+ html{
+     box-sizing:border-box;
+     font-size: 62.5%;
+     
+ }
+ #contenedor{
+  height: 60rem;
+  width: 100%;
+  position: absolute;
+  border-color: aqua;
+  /*flex-direction: row-reverse;*/
+ /* flex-direction: row;*/
+  display: flex;
+  /*flex-wrap: wrap;*/
+  flex-wrap:wrap;
+  flex-direction:row;
+  
+ } 
+ select{
+  width: 15rem;
+  height: 2rem;
+  margin: 2rem;
+ }
+ .tarjetas{
+  background-color:rgb(216, 46, 46); 
+  position: relative;
+  /*display: inline-table;*/ 
+  justify-content: space-around;/* un paging mejorS*/
+  height: 25%;
+  width: 25%;
+  font-size: 2rem;
+ /* flex-direction: row; /* lo pone uno al lado de otro*/
+/*  flex-wrap: wrap; /* para que se pongan una abajo de otra*/
+  margin: 3rem;
+  color: aliceblue;
+  align-content: center;
+  justify-content: center;
+  animation-delay: 3s;
+  overflow: auto;
+ }
+ #salir
+ {
+   color:aliceblue; 
+   /*margin: 0.2rem;*/
+   margin-top: 0;
+   height: 3rem;
+   margin-left: 47rem;
+   font-size: medium;
+   width: 3rem;
+   position: absolute;
+   display:block;
+   background-color:red;
+ }
+ 
+ #formulario{
+  background-color:green; 
+  position: absolute;
+  top: 15rem;
+  left: 40rem;
+  padding: 3rem;
+  right: 40rem;
+  height: 45rem;
+  width: 50rem;
+  font-size: 2rem;
+  color: aliceblue;
+  align-content: center;
+  justify-content: center;
+  animation-delay: 3s;
+  
+}
+#btnAgregar{
+ margin-right: 15rem;
+  position: absolute;
+}
+#contLogin{
+  background-color:white;
+  position: absolute;
+  top: 15rem;
+  left: 40rem;
+  padding: 3rem;
+  right: 50rem;
+  height: 40rem;
+  width: 30rem;
+  font-size: 2rem;
+  color: black;
+  align-content: center;
+  justify-content: center;
+  animation-delay: 3s;
+}
+table{
+  border-collapse:collapse;
+  width: 100%;
+  font-size: 2rem;
+  background-color: brown;
+}
+th,td{
+  padding: 8px;
+  text-align: left;
+  color:black;
+}
+tr:nth-child(even){
+  background-color: azure;
+}
+#contra{
+  width: 20rem;
+  padding: 5px;
+  margin: auto;
+  border-color: blue;
+  position: relative;
+  padding: 12px 20px;
+  box-sizing: border-box;
+ /* margin: 2rem;*/
+ box-sizing: border-box;
+  margin-block-end: 2rem;
+  scroll-margin-left: 2rem;
+}
+.imgUs{
+  margin-left:2rem; 
+  height: 4rem;
+  width: 4rem;
+}
+
+#user{
+  width: 20rem;
+  padding: 5px;
+  margin: auto;
+  border-color: blue;
+  /*position: absolute;*/
+  padding: 12px 20px;
+  box-sizing: border-box;
+ /* margin: 2rem;*/
+ box-sizing: border-box;
+  margin-block-end: 2rem;
+  scroll-margin-left: 2rem;
+}
+input[type=text]{
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  /*position: absolute;*/
+  padding: 12px 20px;
+  box-sizing: border-box;
+ /* margin: 2rem;*/
+  margin-block-end: 2rem;
+  scroll-margin-left: 2rem;
+  
+}
+input[type=password]{
+  width: 100%;
+  padding: 3px;
+  position: absolute;
+  padding: 12px 20px;
+  box-sizing: border-box;
+ /* margin: 2rem;*/
+  margin-block-end: 2rem;
+  scroll-margin-left: 2rem;
+}
+.label{
+/*  margin: 2rem;
+  margin-inline-end: 3rem;
+  margin-inline-end: 2rem;*/
+  display: inline-block;
+  margin-left: 23rem;
+  
+ /* position: absolute;
+  flex-direction: column;
+  padding: 5rem;*/
+
+}
+ #cabecera{
+    background-image: url(./img/header.jpg);
+    background-size:cover; 
+    background-position:center center;
+    position: relative;
+    height: 50vh;
+    padding-top:2rem;
+    display: flex;
+    justify-content: space-between; 
+   }
+#contenedor-spinner
+{
+  /*  background-color: rgba(250, 250, 250, 0.9);*/
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+    #spinner{
+      /*  border: 15px solid #ccc;
+        border-top-color: #252932;
+        border-top-style: groove;*/
+        opacity:0.5;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        position: absolute;
+        top: 50rem;
+        left: 15rem;
+        right: 33rem;
+        bottom: 0;
+        margin: auto;
+        animation: girar 1.5s linear infinite;
+    }
+    #btnLogin{
+      color:white;
+      text-decoration-color: #ffffff;
+      background-color: rgb(50, 18, 233);
+      width: 20rem;
+      margin-left: 5rem;
+      height: 6rem;
+      border-radius: 7px;
+      font-style: italic; /* cursiva */
+      font-size: 2.2rem;
+      padding: 1px;
+      cursor: pointer;/* manito cuando nos posamos arriba */
+      border: none; /* le quitamos el revorde*/
+    }
+    
+   #re{
+     position: absolute;
+
+   }
+   .boton{
+    color:white;
+    text-decoration-color: #ffffff;
+    background-color: rgb(50, 18, 233);
+    width: 13rem;
+    height: 6rem;
+    border-radius: 7px;
+    font-style: italic; /* cursiva */
+    font-size: 2.2rem;
+    padding: 1px;
+    cursor: pointer;/* manito cuando nos posamos arriba */
+    border: none; /* le quitamos el revorde*/
+    
+  
+}
+#postId{
+    color:white;
+    text-decoration-color: #ffffff;
+    background-color: rgb(175, 7, 7);
+    width: 13rem;
+    height: 6rem;
+    margin-left:15rem ;
+    border-radius: 7px;
+    font-style: italic; /* cursiva */
+    font-size: 2.2rem;
+    padding: 1px;
+    cursor: pointer;/* manito cuando nos posamos arriba */
+    border: none; /* le quitamos el revorde*/
+    
+}
+
+   body{
+    margin: 0px;
+
+   }
+   nav a{
+       color: #ffffff;
+       text-decoration: none;
+       font-size: 2.2rem;
+       display: inline-block;
+       margin-right: 2rem;
+   }
+   nav{
+     margin-block-start: 1rem;
+     margin:0rem;
+     display: inline-block;
+     padding-left: 70rem;
+     font-style: italic;
+
+   }
+   h1{
+     color: #ffffff;
+     margin-block-end: 2rem;
+     margin-top: 40vh;
+     width:10vh;
+     height: 1vh;
+     display: flex;
+     justify-content: space-between;
+     margin-left: 0.2vh;
+     margin-right: 100vh;
+    
+   }
+   .error{
+     border-color: red;
+   }
+   .correcto{
+     border-color:white;
+   }
