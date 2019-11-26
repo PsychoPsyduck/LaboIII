@@ -32,6 +32,8 @@ function manejadorSubmit(e) {
     arrayLegisladores.push(nuevoLegislador);
     localStorage.setItem("Legisladores", JSON.stringify(arrayLegisladores));
     cargarGrilla(arrayLegisladores);
+    calcularEdad(arrayLegisladores);
+    calcularGenderMix(arrayLegisladores);
     reestablecerBoxes();
     limpiarForm();
 
@@ -49,6 +51,8 @@ function manejadorModificar(e) {
     reestablecerBoxes()
     limpiarForm();
     cargarGrilla(arrayLegisladores);
+    calcularEdad(arrayLegisladores);
+    calcularGenderMix(arrayLegisladores);
 }
 
 function manejadorBorrar() {
@@ -63,6 +67,8 @@ function manejadorBorrar() {
     reestablecerBoxes()
     limpiarForm();
     cargarGrilla(arrayLegisladores);
+    calcularEdad(arrayLegisladores);
+    calcularGenderMix(arrayLegisladores);
 }
 
 function cargarGrilla(array) {
@@ -210,7 +216,7 @@ function limpiarForm() {
     $("#txtNombre").val("");
     $("#txtApellido").val("");
     $("#txtEmail").val("");
-    $("#numEdad").val("18");
+    $("#numEdad").val("");
     $('#sexoMasculino').prop('checked', true);
     $('#tipoDiputado').prop('checked', true);
 
